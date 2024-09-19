@@ -1,3 +1,110 @@
-#heading{
-    color:red;
+/* General styling for the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+/* Styling for the header */
+.header {
+  background-color: #333;
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo-container img {
+  width: 100px;
+  height: 100px;
+}
+
+.nav-items ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-items ul li {
+  display: inline;
+  cursor: pointer;
+  color: white;
+}
+
+/* Styling for the restaurant cards container */
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Styling for each restaurant card */
+.res-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 180px;
+  padding: 15px;
+  text-align: center;
+}
+
+.res-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.res-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.res-card h4 {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Styling for text like delivery time */
+.res-card h4:last-of-type {
+  font-weight: bold;
+  color: #f44336;
+}
+
+/* Search bar styling */
+.search {
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .res-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .res-card {
+    width: 80%;
+  }
+}
+
+.res-card:hover{
+  border: 1px solid black;
+  cursor: pointer;
 }
